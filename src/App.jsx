@@ -2,12 +2,15 @@ import { useState } from 'react'
 // import reactLogo from './assets/react.svg'
 // import viteLogo from '/vite.svg'
 import './App.css'
+import {CiBookmark, CiBoxList, CiGift, CiSearch, CiShoppingCart, CiUser} from "react-icons/ci";
+import {FaHome} from "react-icons/fa";
+import {IoIosStats} from "react-icons/io";
+
 
 function App() {
-  const [count, setCount] = useState(0)
 
   return (
-    <div className="CreateNewCampaign w-96 h-96 relative bg-stone-50">
+    <div className="CreateNewCampaign bg-stone-50">
     <div className="EcommercePlatform2024AllRightReserved left-[642px] top-[1328px] absolute text-center text-gray-400 text-sm font-normal font-['Inter'] leading-snug">eCommerce Platform @ 2024. All right reserved</div>
     <div className="Form w-96 h-96 left-[192px] top-[100px] absolute bg-white rounded-xl shadow">
         <div className="Frame439 w-96 h-32 left-[32px] top-[40px] absolute">
@@ -145,36 +148,39 @@ function App() {
             <div className="Frame409 w-12 h-12 relative">
                 <div className="Rectangle63 w-12 h-12 left-0 top-0 absolute bg-lime-700 rounded-lg shadow" />
                 <div className="Home w-6 h-6 left-[14px] top-[14px] absolute" >
-                  <FaHome />
+                  <FaHome className="text-white"/>
                 </div>
              </div>
             <div className="Frame410 w-12 h-12 relative">
                 <div className="Rectangle63 w-12 h-12 left-0 top-0 absolute bg-lime-700 rounded-lg" />
-                <div className="Layout w-6 h-6 left-[14px] top-[14px] absolute" />
+                <div className="Layout w-6 h-6 left-[14px] top-[14px] absolute" >
+                    <CiBoxList className="text-white"/>
+                </div>
             </div>
             <div className="Frame412 w-12 h-12 relative">
                 <div className="Rectangle63 w-12 h-12 left-0 top-0 absolute bg-lime-700 rounded-lg" />
-                <div className="ShoppingBag w-6 h-6 left-[14px] top-[14px] absolute" />
+                <div className="ShoppingBag w-6 h-6 left-[14px] top-[14px] absolute" ><CiShoppingCart className="text-white"/> </div>
             </div>
             <div className="Frame411 w-12 h-12 relative">
                 <div className="Rectangle63 w-12 h-12 left-0 top-0 absolute bg-lime-700 rounded-lg" />
-                <div className="User w-6 h-6 left-[14px] top-[14px] absolute" />
+                <div className="User w-6 h-6 left-[14px] top-[14px] absolute"
+                ><CiUser className="text-white"/> </div>
             </div>
             <div className="Frame413 w-12 h-12 relative">
                 <div className="Rectangle63 w-12 h-12 left-0 top-0 absolute bg-lime-700 rounded-lg" />
-                <div className="TrendingUp w-6 h-6 left-[14px] top-[14px] absolute" />
+                <div className="TrendingUp w-6 h-6 left-[14px] top-[14px] absolute" > <IoIosStats className="text-white" /></div>
             </div>
             <div className="Frame414 w-12 h-12 relative">
                 <div className="Rectangle63 w-12 h-12 left-0 top-0 absolute bg-lime-700 rounded-lg" />
-                <div className="Search w-6 h-6 left-[14px] top-[14px] absolute" />
+                <div className="Search w-6 h-6 left-[14px] top-[14px] absolute" ><CiSearch className="text-white" /></div>
             </div>
             <div className="Frame416 w-12 h-12 relative">
                 <div className="Rectangle63 w-12 h-12 left-0 top-0 absolute bg-lime-700 rounded-lg" />
-                <div className="Book w-6 h-6 left-[14px] top-[14px] absolute" />
+                <div className="Book w-6 h-6 left-[14px] top-[14px] absolute" ><CiBookmark className="text-white"/></div>
             </div>
             <div className="Frame415 w-12 h-12 relative">
                 <div className="Rectangle63 w-12 h-12 left-0 top-0 absolute bg-white rounded-lg" />
-                <div className="Gift w-6 h-6 left-[14px] top-[14px] absolute" />
+                <div className="Gift w-6 h-6 left-[14px] top-[14px] absolute" ><CiGift className="text-black"/></div>
             </div>
         </div>
     </div>
